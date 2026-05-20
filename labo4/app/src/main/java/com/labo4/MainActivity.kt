@@ -56,13 +56,14 @@ data class Task (
     val isCompleted: Boolean = false
 )
 
+
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            LabTemplateTheme {
-                Greeting()
+            Labo4Theme {
+                ListaUsuariosScreen(MiScreen())
             }
         }
     }
